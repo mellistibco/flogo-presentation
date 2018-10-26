@@ -1,0 +1,222 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Project Flogo</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<style>
+			.reveal section p {
+				font-size: 0.8em !important;
+				}
+			#left {
+			left:-8.33%;
+			text-align: left;
+			float: left;
+			width:50%;
+			z-index:-10;
+			}
+
+			#right {
+			left:31.25%;
+			top: 75px;
+			float: right;
+			text-align: right;
+			z-index:-10;
+			width:50%;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section data-background="images/flynn.svg" data-background-opacity="1.0" data-background-size="40%" data-background-position="left 50% top 10%">
+					<br/><br/><br/>
+					<h2>Project Flogo</h2>
+					<h4>Open Source Event-Driven Ecosystem</h4>
+				</section>
+				<section data-background="images/flynn.svg" data-background-opacity="0.7" data-background-size="15%" data-background-position="left 90% top 5%">
+					<section>
+						<h2>What is Project Flogo?</h2>
+						<p>
+							A Golang-based, open source ecosystem of opinionated event-driven capabilities to simplify the building of efficient serverless functions, microservices & edge apps.
+						<br/><br/>Built from the ground up with the following core principals...
+						</p>
+					</section>
+					<section>
+							<ul>
+									<li>
+										<p>🎈 Ultra-light: 20x-50x lighter than Java or Node.js</p>
+									</li>
+									<li class="fragment">
+										<p>⚡️ Event-driven: Powerful event-driven programming model based on triggers and actions</p>
+									</li>
+									<li class="fragment">
+										<p>⚙️ Common core: A single, common core enables reuse and flexibility across all eventing constructs</p>
+									</li>
+								</ul>
+					</section>
+					<section>
+							<ul>
+								<li>
+									💪 Deployment flexibility: Serverless functions, containers, static binaries, oh my! 😀
+								</li>
+								<li class="fragment">
+									🧠 Native machine learning: powered by Google TensorFlow
+								</li>
+								<li class="fragment">
+									😍 100% Open Source for your dev & hacking pleasure
+								</li>
+							</ul>
+					</section>
+					<section data-transition="slide">
+								<h2>So, umm, what's an event?</h2>
+					</section>
+
+					<section data-transition="slide">
+						<p>In it's most simple form an event is just...</p>
+							<blockquote>
+								&ldquo;a thing that happens, especially one of importance.&rdquo;
+							</blockquote>
+							<p class="fragment fade-in">but... events can/should be processed differently...</p>
+							<p class="fragment fade-in">dictated by the data and use case</p>
+					</section>
+				</section>
+				<section>
+					<section data-transition="zoom">
+						<h2>Introducing</h2>
+					</section>
+					<section data-transition="slide" data-background="images/flynn_center.png" data-background-opacity="1.0" data-background-size="70%">
+					</section>
+					<section data-transition="slide" data-background="images/flogo-ecosystem_Flows.png" data-background-opacity="0.8" data-background-size="15%" data-background-position="left 90% top 5%">
+						<h2>Event-driven App Integration</h2>
+						<div id="left">
+								<ul>
+									<li class="fragment">
+										<p>Connect your data and apps... Regardless of endpoint</p>
+									</li>
+									<li class="fragment">
+											<p>Enrich incoming events... From any data source</p>
+									</li>
+								</ul>
+						</div>
+						<div id="right">
+								<ul>
+									<li class="fragment">
+										<p>Conditional control flow... Go ahead, orchastrate</p>
+									</li>
+									<li class="fragment">
+											<p>Run anywhere: serverless, containers... You decide</p>
+									</li>
+								</ul>
+						</div>
+					</section>
+
+					<!--Streams-->
+					<section data-transition="slide" data-background="images/flogo-ecosystem_Rafting.png" data-background-opacity="0.8" data-background-size="15%" data-background-position="left 90% top 5%">
+						<h2>Stream Processing Simplified</h2>
+						<div id="left">
+								<ul>
+									<li class="fragment">
+										<p>Filter out the noise... Not all events are created equal</p>
+									</li>
+									<li class="fragment">
+										<p><i>All your events are belong you...</i> Group and join across multiple event sources</p>
+									</li>
+								</ul>
+						</div>
+						<div id="right">
+								<ul>
+									<li class="fragment">
+										<p>Deduce value from events... Aggregate across time & events</p>
+									</li>
+									<li class="fragment">
+											<p>Run at the  event source... At the edge, in the cloud, wherever... go for it</p>
+									</li>
+								</ul>
+						</div>
+					</section>
+
+					<!--Rules-->
+					<section data-transition="slide" data-background="images/flogo-ecosystem_Rules.png" data-background-opacity="0.8" data-background-size="15%" data-background-position="left 90% top 5%">
+						<h2>Real-time Contextual Decisioning</h2>
+						<div id="left">
+								<ul>
+									<li class="fragment">
+										<p>Take action... Deterministic decisioning</p>
+									</li>
+									<li class="fragment">
+										<p>Never forget... Corelate past events with incoming events</p>
+									</li>
+								</ul>
+						</div>
+						<div id="right">
+								<ul>
+									<li class="fragment">
+										<p>Don't be boring... Declarative rule definition</p>
+									</li>
+									<li class="fragment">
+										<p>Everyone needs rules... Deploy wherever you need a bit of order</p>
+									</li>
+								</ul>
+						</div>
+					</section>
+
+				</section>
+
+				<section>
+						<section data-transition="zoom" data-background="images/ossmap.png" data-background-opacity="0.5" data-background-size="100%">
+								<h2>Powered by the community</h2>
+								<p>With over 400 activity & triggers...</p>
+								<p class="fragment">🎉 Processing events & connecting to APIs & data sources has never been easier</p>
+							</section>
+							<section data-transition="zoom">
+								<h2>Fueled by Machine Learning</h2>
+								<p>Go ahead, we dare you, build smarter apps</p>
+								<br/>
+								<ul>
+									<li class="fragment">
+										🎇Add a dash of ML to your microservices & functions...
+									</li>
+								</ul>
+
+								<div class="fragment">Powered by... <br/><img class="plain" src="images/Tensorflow_logo.svg"></div>
+							</section>
+				</section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
